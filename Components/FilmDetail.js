@@ -51,9 +51,7 @@ class FilmDetail extends React.Component{
         <ScrollView style={styles.scrollview_container}>
           <Image style={styles.image} source={{uri: getImageFromApi(film.backdrop_path)}} />
           <Text style={styles.title_text}>{film.title}</Text>
-          <TouchableOpacity>
-            style={styles.favorite_container}
-            onPress={() => this._toggleFavorite()}
+          <TouchableOpacity style={styles.favorite_container} onPress={() => this._toggleFavorite()}>
             {this._displayFavoriteImage()}
           </TouchableOpacity>
           <Text style={styles.description_text}>{film.overview}</Text>

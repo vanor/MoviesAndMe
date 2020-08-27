@@ -5,8 +5,9 @@ import { getImageFromApi } from '../API/TMDBApi';
 class FilmItem extends React.Component{
   _displayFavoriteImage(){
     if(this.props.isFilmFavorite){
+      const sourceImage = require('../Images/ic_favorite.png')
       return(
-        <Image style={styles.favorite_image} source={require('../Images/ic_favorite.png')} />
+        <Image style={styles.favorite_image} source={sourceImage} />
       )
     }
   }
@@ -20,6 +21,7 @@ class FilmItem extends React.Component{
           source={{uri: getImageFromApi(film.poster_path)}} />
         <View style={styles.text_container}>
           <View style={styles.header}>
+            {this._displayFavoriteImage()}
             <Text style={styles.title_text}>{film.title}</Text>
             <Text style={styles.vote_text}>{film.vote_average}</Text>
           </View>
