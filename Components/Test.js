@@ -6,7 +6,7 @@ class Test extends React.Component {
   render(){
     return (
       <View style={styles.main_container}>
-        <View style={styles.subveiw_container}></View>
+        <View style={styles.subview_container}></View>
       </View>
     );
   }
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  subveiw_container: {
+  subview_container: {
     //
   }
 });

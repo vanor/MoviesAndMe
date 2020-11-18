@@ -35,9 +35,9 @@ const FavoritesStackNavigator = createStackNavigator({
 });
 
 const MoviesTabNavigator = createBottomTabNavigator({
-  Test: {
+  /*Test: {
     screen: Test
-  },
+  },*/
   Search: {
     screen: SearchStackNavigator,
     navigationOptions: {
