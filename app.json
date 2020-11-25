@@ -22,7 +22,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "movies.and.me.com"
+    },
+    "android": {
+      "package": "movies.and.me.com"
     }
   }
 }
